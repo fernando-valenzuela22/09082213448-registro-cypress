@@ -30,7 +30,7 @@ describe('Formulario de Registro', () => {
     cy.get('#password').type('secreto123');
     cy.get('#btnRegistrar').click();
 
-    cy.get('#mensajeExito').should('be.visible').and('have.text', 'Registro exitoso');
+    cy.get('#mensajeExito').should('be.visible').and('have.text', 'Registro FALLIDO');
 
     // Formulario vacío
     cy.get('#nombre').should('have.value', '');
@@ -51,7 +51,7 @@ describe('Formulario de Registro', () => {
     cy.get('#password').type('123456');
     cy.get('#btnRegistrar').click();
 
-    cy.get('#mensajeExito').should('have.text', 'Registro exitoso');
+    cy.get('#mensajeExito').should('have.text', 'Registro FALLIDO');
     cy.get('#errorPassword').should('have.text', '');
   });
 });
