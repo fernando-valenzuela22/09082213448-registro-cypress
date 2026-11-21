@@ -50,7 +50,7 @@ Requisito: tener Node.js instalado (`node -v`).
 
 También se pueden correr en la terminal sin abrir la ventana:
 ```bash
-npx cypress run
+npm test
 ```
 Al final muestra una tabla con `2 passing`.
 
