@@ -4,6 +4,7 @@
   "description": "Formulario de registro validado con JS y probado con Cypress",
   "scripts": {
     "cy:open": "cypress open",
+    "test:open": "cypress open",
     "test": "cypress run"
   },
   "devDependencies": {
