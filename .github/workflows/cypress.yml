@@ -1,0 +1,17 @@
+name: Pruebas Cypress
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  cypress-run:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout del código
+        uses: actions/checkout@v7
+
+      - name: Instalar dependencias y ejecutar Cypress
+        uses: cypress-io/github-action@v7
+        with:
+          browser: chrome
