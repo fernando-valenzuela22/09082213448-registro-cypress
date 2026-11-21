@@ -60,3 +60,6 @@ Al final muestra una tabla con `3 passing`.
 **Prueba 1 – datos inválidos:** deja el nombre vacío, escribe `correosinarroba` y la contraseña `123`, presiona *Registrarse* y comprueba que aparecen los 3 mensajes de error, que no hay mensaje de éxito y que la página no se recargó.
 
 **Prueba 2 – datos válidos:** escribe `Juan Pérez`, `juan@correo.com` y `secreto123`, presiona *Registrarse* y comprueba que aparece "Registro exitoso", que los 3 campos quedan vacíos, que no hay errores y que la página no se recargó.
+
+## Integración continua
+Cada push ejecuta las pruebas de Cypress en GitHub Actions. La rama main está protegida: solo acepta cambios por Pull Request con el check cypress-run en verde.
