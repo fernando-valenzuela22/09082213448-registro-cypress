@@ -1,0 +1,12 @@
+{
+  "name": "registro-cypress",
+  "version": "1.0.0",
+  "description": "Formulario de registro validado con JS y probado con Cypress",
+  "scripts": {
+    "cy:open": "cypress open",
+    "test": "cypress run"
+  },
+  "devDependencies": {
+    "cypress": "^16.3.0"
+  }
+}
