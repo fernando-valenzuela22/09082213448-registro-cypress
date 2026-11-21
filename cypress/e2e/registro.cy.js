@@ -44,4 +44,14 @@ describe('Formulario de Registro', () => {
 
     cy.window().its('sinRecargar').should('eq', true);
   });
+
+  it('permite una contraseña que tenga exactamente 6 caracteres', () => {
+    cy.get('#nombre').type('Fernando');
+    cy.get('#correo').type('fernando@correo.com');
+    cy.get('#password').type('123456');
+    cy.get('#btnRegistrar').click();
+
+    cy.get('#mensajeExito').should('have.text', 'Registro exitoso');
+    cy.get('#errorPassword').should('have.text', '');
+  });
 });

@@ -44,15 +44,16 @@ Requisito: tener Node.js instalado (`node -v`).
    ```
    - Elegir **E2E Testing** → elegir navegador (Chrome o Electron) → **Start E2E Testing**.
    - Hacer clic en **registro.cy.js**.
-4. Se ejecutan las 2 pruebas y deben quedar en **verde (passed)**:
+4. Se ejecutan las 3 pruebas y deben quedar en **verde (passed)**:
    - ✅ muestra los 3 mensajes de error con datos inválidos
    - ✅ muestra registro exitoso y limpia el formulario con datos válidos
+   - ✅ permite una contraseña con exactamente 6 caracteres
 
 También se pueden correr en la terminal sin abrir la ventana:
 ```bash
 npm test
 ```
-Al final muestra una tabla con `2 passing`.
+Al final muestra una tabla con `3 passing`.
 
 ## Qué verifica cada prueba
 
